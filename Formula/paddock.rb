@@ -1,9 +1,9 @@
 class Paddock < Formula
   desc "Terminal workspace for running Claude Code"
   homepage "https://github.com/MiohitoKiri5474/paddock"
-  url "https://github.com/MiohitoKiri5474/paddock/releases/download/v0.0.1/paddock-v0.0.1-aarch64-apple-darwin.tar.gz"
-  version "0.0.1"
-  sha256 "a979704aa7eecbca3eada98103bd764a7e609c69b37702aecf7b194e2e6e2678"
+  url "https://github.com/MiohitoKiri5474/paddock/releases/download/v0.0.2/paddock-v0.0.2-aarch64-apple-darwin.tar.gz"
+  version "0.0.2"
+  sha256 "461b046d41d95a63ad113a2a323887a043bc51da368ad31543122082cf868332"
   license "MIT"
 
   depends_on arch: :arm64
