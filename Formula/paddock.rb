@@ -1,9 +1,9 @@
 class Paddock < Formula
   desc "Terminal workspace for running Claude Code"
   homepage "https://github.com/MiohitoKiri5474/paddock"
-  url "https://github.com/MiohitoKiri5474/paddock/releases/download/v0.0.3/paddock-v0.0.3-aarch64-apple-darwin.tar.gz"
-  version "0.0.3"
-  sha256 "5c1703b0a8a132b71ece36e9ef6ccc37a25b1d484fbd3e5269a321e3a62bbe66"
+  url "https://github.com/MiohitoKiri5474/paddock/releases/download/v0.0.4/paddock-v0.0.4-aarch64-apple-darwin.tar.gz"
+  version "0.0.4"
+  sha256 "77c7d19d1264868d89ef7313df0193b535fb512feabb2c5c5fa0a7e16d521e6e"
   license "MIT"
 
   depends_on arch: :arm64
@@ -23,5 +23,6 @@ class Paddock < Formula
 
   test do
     assert_match "[keys]", shell_output("#{bin}/paddock keys")
+    assert_equal "paddock #{version}\n", shell_output("#{bin}/paddock --version")
   end
 end
